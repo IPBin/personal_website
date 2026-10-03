@@ -6,22 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pio Binawan</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./personal_favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon_2.png" type="image/x-icon">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        
+        /*
+        .nunito-<uniquifier> {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+        */
 
+        html {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            background-color: #f6f4f0;
+            color:#222222;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 50px auto;
+            padding: 0 1.5rem;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 15px;
+        }
+
+        button {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+
+            width: 90px;
+            height: 30px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border-radius: 7px;
+        }
     </style>
 
   </head>
   <body>
     <main>
-        <div class="things">
-            <img src="headshot_2.jpg" alt="Head Shot of Pio Binawan">
+        <img src="headshot_2.jpg" alt="Head Shot of Pio Binawan">
+        <div class="text">
             <h1>Ignatius Pio Binawan</h1>
             <p>
-                Hi fellow human!<br>
-                I'm Pio. I believe AI is forcing the world to face an inflection point. Which is why I choose to work in AI safety.<br>
-                I am a double major of Computer Science and Public Policy at UofT, and am part of the operations team at <a href="https://www.taisi.ca/">TAISI</a>.<br>
+                Hi fellow human!<br><br>
+                I'm Pio. I believe AI is forcing the world to face an inflection point. Which is why I choose to work in AI safety.<br><br>
+                I am a double major of Computer Science and Public Policy at UofT, and am part of the operations team at <a href="https://www.taisi.ca/">TAISI</a>.<br><br>
                 My interests lie in AI policies and technical governance strategies to bring about aligned AI and a more beautiful future.<br><br>
                 Please reach out to me below!
             </p>
@@ -44,7 +86,7 @@
         async function copyEmail() {
             try {
                 await navigator.clipboard.writeText('pio.binawan@gmail.com');
-                alert('Email copied to clipboard!');
+                alert('Email pio.binawan@mail.utoronto.ca copied to clipboard!');
             } catch (err) {
                 alert('Could not copy the email.');
             }
